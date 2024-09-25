@@ -1,32 +1,25 @@
+@import "reset-css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400;500;600;700&display=swap");
+
 @import "./App.variables.scss";
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: $white-color;
   color: $text-color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  height: 100%;
-  width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -42,6 +35,14 @@ h5,
 h6,
 p {
   margin: 0;
+}
+.app {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 [class*="__container"] {

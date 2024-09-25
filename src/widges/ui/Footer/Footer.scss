@@ -1,0 +1,49 @@
+@import "../../../app/App.variables.scss";
+
+.footer {
+  background: $brand-color;
+  width: 100%;
+  @include flex;
+  margin-top: $section-margin;
+}
+
+.footer__container {
+  @include flex;
+  justify-content: space-between;
+  padding: 30px 0;
+
+  .footer__logo-blok {
+    @include flex;
+    gap: 10px;
+  }
+
+  .footer__title {
+    @include h3;
+    color: $white-color;
+    font-weight: bolder;
+  }
+
+  .footer__credits-block {
+    @include flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer__credits-item {
+    @include body-medium;
+    color: $white-color;
+    // opacity: 0.8;
+  }
+
+  .footer__contacts-blok {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+// .inst__img svg {
+//   width: 20px;
+//   height: 20px;
+// }

@@ -1,0 +1,12 @@
+@import "../../../app//App.variables.scss";
+
+.logo__img {
+  width: 50px;
+}
+
+.color-style {
+  background: $white-color;
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 5px;
+}

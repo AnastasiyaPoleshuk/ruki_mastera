@@ -1,0 +1,21 @@
+@import "../../../app//App.variables.scss";
+
+.welcome__article {
+  .welcome__title {
+    @include h1;
+
+    & span {
+      color: $brand-color;
+    }
+  }
+
+  .welcome__sub-title {
+    @include h3;
+    font-style: italic;
+    margin-bottom: 130px;
+
+    & span {
+      color: $brand-color;
+    }
+  }
+}

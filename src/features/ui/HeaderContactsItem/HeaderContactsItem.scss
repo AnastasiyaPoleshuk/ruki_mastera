@@ -1,0 +1,12 @@
+@import "../../../app//App.variables.scss";
+
+.header__contacts-item {
+  @include flex;
+  gap: 15px;
+
+  & .header__contact-link {
+    @include body-medium;
+    text-decoration: none;
+    color: $white-color;
+  }
+}

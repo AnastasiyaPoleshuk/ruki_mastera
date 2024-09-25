@@ -1,0 +1,15 @@
+@import "../../../app//App.variables.scss";
+
+.app-btn {
+  @include btn;
+  background: $brand-color;
+  border: 4px solid $brand-color;
+  color: $white-color;
+  padding: 25px 35px;
+
+  &:hover {
+    border: 4px solid $brand-color-hover;
+    color: $brand-color-hover;
+    background: transparent;
+  }
+}

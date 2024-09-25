@@ -1,0 +1,19 @@
+@import "../../../app//App.variables.scss";
+
+.main-img {
+  width: 550px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border: 3px solid $brand-color;
+    border-radius: 50%;
+  }
+}

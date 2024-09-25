@@ -1,0 +1,42 @@
+@import "../../../app//App.scss";
+
+.header {
+  background: $brand-color;
+  width: 100%;
+  @include flex;
+}
+
+.header__container {
+  @include flex;
+  justify-content: space-between;
+  padding: 20px 0;
+
+  .header__logo-blok {
+    @include flex;
+    gap: 10px;
+  }
+
+  .header__title {
+    @include h2;
+    color: $white-color;
+    font-weight: bolder;
+  }
+
+  .header__tel {
+    @include h2;
+    color: $white-color;
+    // font-weight: bolder;
+  }
+
+  .header__contacts-blok {
+    @include flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+  }
+}
+
+.inst__img svg {
+  width: 20px;
+  height: 20px;
+}

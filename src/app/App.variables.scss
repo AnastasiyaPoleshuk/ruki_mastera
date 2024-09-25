@@ -1,33 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-$brand-color-light: #2f54eb;
-$selected-bg-color-light: #f0f5ff;
-$hover-color-light: #597ef7;
-$click-color-light: #1d39c4;
-$primary-color-light-1: aliceblue;
-$primary-color-light-9: #003a8c;
-$warning-color: #ff4d4f;
-$gold-color-6: #faad14;
-$white-color: #fff;
+// $brand-color: #911919;
+// $brand-color-hover: #720303;
+
+$brand-color: #5b85b6;
+$brand-color-hover: #5773b1;
+$error-color: #ff4d4f;
+$warning-color: #faad14;
+$white-color: #fafafa;
 $gray-color: #8c8c8c;
 $gray-color-light: #bfbfbf;
 $text-color: rgba(0, 0, 0, 0.85);
 
-$button-height: 40px;
-$border-radius-2: 2px;
-$padding-24: 24px;
-$gap-48: 48px;
-$gap-24: 24px;
-$gap-16: 16px;
-$gap-10: 10px;
-$gap-8: 8px;
-$font-size-28: 28px;
+$section-margin: 50px;
 
 $main-width: 1400px;
 
 @mixin h1 {
   font-weight: 700;
-  font-size: 38px;
+  font-size: 94px;
   line-height: 130%;
 }
 
@@ -83,4 +74,17 @@ $main-width: 1400px;
   font-weight: 700;
   font-size: 14px;
   line-height: 130%;
+}
+
+@mixin btn {
+  border-radius: 40px;
+  font-size: 24px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
