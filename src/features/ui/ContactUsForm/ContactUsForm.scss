@@ -1,0 +1,51 @@
+@import "../../../app/App.variables.scss";
+
+.contact-us__form-blok {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+}
+
+.contact-us__title {
+  @include h2;
+  font-size: 62px;
+  font-weight: bolder;
+  color: $white-color;
+}
+
+.contact-us__form {
+  margin-top: 60px;
+  width: 500px;
+  background-color: $white-color;
+  border-radius: 20px;
+  padding: 25px;
+  @include flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+
+  .form__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+
+  .form__button {
+    @include btn;
+    border: 4px solid $brand-color-hover;
+    color: $brand-color-hover;
+    background: transparent;
+    padding: 20px 30px;
+
+    &:hover {
+      background: $brand-color !important;
+      border: 4px solid $brand-color !important;
+      color: $white-color;
+    }
+  }
+}

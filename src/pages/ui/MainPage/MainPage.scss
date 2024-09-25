@@ -1,1 +1,7 @@
 @import "../../../app/App.variables.scss";
+
+.main {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+}
