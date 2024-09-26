@@ -1,0 +1,29 @@
+@import "../../../app//App.variables.scss";
+
+.about__section {
+  background: $brand-color;
+  margin-top: $section-margin;
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.about__container {
+  @include flex;
+  flex-direction: column;
+
+  .about__title {
+    @include h2;
+    font-size: 62px;
+    font-weight: bolder;
+    color: $white-color;
+  }
+
+  .about-items__block {
+    @include flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 50px 0;
+  }
+}

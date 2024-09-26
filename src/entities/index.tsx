@@ -6,3 +6,4 @@ export { WelcomeTitle } from "./ui/WelcomeTitle/WelcomeTitle";
 export { ContactUsImg } from "./ui/ContactUsImg/ContactUsImg";
 export { PriceImg } from "./ui/PriceImg/PriceImg";
 export { CollapsePriceItem } from "./ui/CollapsePriceItem/CollapsePriceItem";
+export { AboutItem } from "./ui/AboutItem/AboutItem";

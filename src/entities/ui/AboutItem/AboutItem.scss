@@ -1,0 +1,23 @@
+@import "../../../app//App.variables.scss";
+
+.about-item__wrapp {
+  @include flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+
+  .about-item__title {
+    @include h3;
+    color: $white-color;
+    border-bottom: 1px solid $white-color;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .about-item__description {
+    @include h6;
+    font-style: italic;
+    color: $white-color;
+    text-align: center;
+  }
+}
