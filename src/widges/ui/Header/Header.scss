@@ -16,6 +16,11 @@
     padding: 15px 0;
   }
 
+  @media (max-width: 350px) {
+    justify-content: center;
+    gap: 20px;
+  }
+
   .header__logo-blok {
     @include flex;
     gap: 10px;
@@ -46,6 +51,10 @@
     @media (max-width: 600px) {
       @include h5;
     }
+
+    @media (max-width: 400px) {
+      @include body-medium;
+    }
   }
 
   .header__contacts-blok {
@@ -61,6 +70,11 @@
       margin-top: 10px;
       border-top: 1px solid $white-color;
       padding-top: 15px;
+    }
+
+    @media (max-width: 350px) {
+      width: 90%;
+      margin-top: 0px;
     }
   }
 }

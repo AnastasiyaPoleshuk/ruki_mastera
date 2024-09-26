@@ -7,9 +7,15 @@
   @media (max-width: 600px) {
     gap: 5px;
   }
+
   & .header__contact-link {
     @include body-medium;
+    @include body-small;
     text-decoration: none;
     color: $white-color;
+  }
+
+  @media (max-width: 600px) {
+    @include body-small;
   }
 }

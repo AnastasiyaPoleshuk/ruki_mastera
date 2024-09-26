@@ -39,6 +39,12 @@
     @include flex;
     flex-direction: column;
     gap: 10px;
+
+    @media (max-width: 400px) {
+      margin-top: 10px;
+      border-top: 1px solid $white-color;
+      padding-top: 15px;
+    }
   }
 
   .footer__credits-item {

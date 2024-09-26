@@ -11,6 +11,12 @@
     margin-left: 0;
   }
 
+  @media (max-width: 400px) {
+    @include flex;
+    flex-direction: column;
+    width: 95%;
+  }
+
   .collapse-price__title {
     @include h2;
     font-size: 62px;
