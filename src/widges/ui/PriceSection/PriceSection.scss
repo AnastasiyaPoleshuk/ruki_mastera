@@ -4,4 +4,14 @@
   @include flex;
   justify-content: space-between;
   margin-top: $section-margin;
+
+  @media (max-width: 800px) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
 }

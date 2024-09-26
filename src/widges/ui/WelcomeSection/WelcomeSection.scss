@@ -4,4 +4,21 @@
   @include flex;
   justify-content: space-between;
   margin-top: $section-margin;
+
+  @media (max-width: 800px) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .welcome__info {
+    @media (max-width: 600px) {
+      @include flex;
+      flex-direction: column;
+    }
+  }
 }

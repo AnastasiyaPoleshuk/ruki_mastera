@@ -6,17 +6,50 @@
   @include flex;
   flex-direction: column;
   padding-top: $section-margin;
+
+  @media (max-width: 800px) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    padding-top: 30px;
+  }
 }
 
 .about__container {
   @include flex;
   flex-direction: column;
 
+  .about__icon {
+    font-size: 70px;
+    color: #fafafa;
+
+    @media (max-width: 800px) {
+      font-size: 52px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 42px;
+    }
+  }
+
   .about__title {
     @include h2;
     font-size: 62px;
     font-weight: bolder;
     color: $white-color;
+
+    @media (max-width: 800px) {
+      font-size: 52px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 42px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 32px;
+    }
   }
 
   .about-items__block {
@@ -24,5 +57,12 @@
     align-items: flex-start;
     gap: 50px;
     margin: 50px 0;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+      gap: 30px;
+    }
   }
 }

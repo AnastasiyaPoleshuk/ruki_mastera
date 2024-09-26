@@ -6,12 +6,20 @@
   gap: 15px;
   width: 70%;
 
+  @media (max-width: 600px) {
+    width: 95%;
+  }
+
   .about-item__title {
     @include h3;
     color: $white-color;
     border-bottom: 1px solid $white-color;
     text-align: center;
     margin-bottom: 5px;
+
+    @media (max-width: 800px) {
+      @include h4;
+    }
   }
 
   .about-item__description {
@@ -19,5 +27,9 @@
     font-style: italic;
     color: $white-color;
     text-align: center;
+
+    @media (max-width: 800px) {
+      @include body-regular;
+    }
   }
 }

@@ -11,6 +11,11 @@
   justify-content: space-between;
   padding: 20px 0;
 
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    padding: 15px 0;
+  }
+
   .header__logo-blok {
     @include flex;
     gap: 10px;
@@ -20,11 +25,27 @@
     @include h2;
     color: $white-color;
     font-weight: bolder;
+
+    @media (max-width: 800px) {
+      @include h3;
+    }
+
+    @media (max-width: 600px) {
+      @include h4;
+    }
   }
 
   .header__tel {
     @include h2;
     color: $white-color;
+
+    @media (max-width: 800px) {
+      @include h4;
+    }
+
+    @media (max-width: 600px) {
+      @include h5;
+    }
   }
 
   .header__contacts-blok {
@@ -32,6 +53,15 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 7px;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+      border-top: 1px solid $white-color;
+      padding-top: 15px;
+    }
   }
 }
 

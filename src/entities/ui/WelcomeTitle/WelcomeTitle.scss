@@ -7,6 +7,22 @@
     & span {
       color: $brand-color;
     }
+
+    @media (max-width: 1000px) {
+      font-size: 56px;
+    }
+
+    @media (max-width: 800px) {
+      font-size: 42px;
+    }
+
+    @media (max-width: 600px) {
+      text-align: center;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 32px;
+    }
   }
 
   .welcome__sub-title {
@@ -16,6 +32,21 @@
 
     & span {
       color: $brand-color;
+    }
+
+    @media (max-width: 1000px) {
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 800px) {
+      @include h5;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 600px) {
+      @include body-medium;
+      margin-bottom: 30px;
+      text-align: center;
     }
   }
 }

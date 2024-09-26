@@ -2,12 +2,33 @@
 
 .collapse-price__block {
   margin-left: 100px;
+
+  @media (max-width: 1000px) {
+    margin-left: 15px;
+  }
+
+  @media (max-width: 800px) {
+    margin-left: 0;
+  }
+
   .collapse-price__title {
     @include h2;
     font-size: 62px;
     font-weight: bolder;
     color: $brand-color;
     text-align: center;
+
+    @media (max-width: 800px) {
+      font-size: 52px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 42px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 32px;
+    }
   }
 
   .collapse-price__sub-title {
@@ -15,5 +36,14 @@
     font-style: italic;
     text-align: center;
     margin-bottom: 70px;
+
+    @media (max-width: 1000px) {
+      @include h5;
+      margin-bottom: 25px;
+    }
+
+    @media (max-width: 600px) {
+      @include body-regular;
+    }
   }
 }

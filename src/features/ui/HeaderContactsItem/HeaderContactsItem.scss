@@ -4,6 +4,9 @@
   @include flex;
   gap: 15px;
 
+  @media (max-width: 600px) {
+    gap: 5px;
+  }
   & .header__contact-link {
     @include body-medium;
     text-decoration: none;

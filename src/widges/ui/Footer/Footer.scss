@@ -11,6 +11,15 @@
   justify-content: space-between;
   padding: 30px 0;
 
+  @media (max-width: 800px) {
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 400px) {
+    flex-direction: column;
+  }
+
   .footer__logo-blok {
     @include flex;
     gap: 10px;
@@ -20,6 +29,10 @@
     @include h3;
     color: $white-color;
     font-weight: bolder;
+
+    @media (max-width: 800px) {
+      @include h4;
+    }
   }
 
   .footer__credits-block {
@@ -38,5 +51,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }
