@@ -4,11 +4,9 @@ import "./ContactUsSection.scss";
 
 export const ContactUsSection = () => {
   return (
-    <section className="contact-us__section">
-      <div className="contact-us__container">
-        <ContactUsImg />
-        <ContactUsForm />
-      </div>
+    <section className="contact-us__container" id="contactUs">
+      <ContactUsForm />
+      <ContactUsImg />
     </section>
   );
 };

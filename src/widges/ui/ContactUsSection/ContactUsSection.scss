@@ -1,15 +1,7 @@
 @import "../../../app/App.variables.scss";
 
-.contact-us__section {
-  background: $brand-color;
-  margin-top: $section-margin;
-  width: 100%;
-  @include flex;
-  flex-direction: column;
-  padding-top: 30px;
-}
-
 .contact-us__container {
   @include flex;
   justify-content: space-between;
+  margin-top: $section-margin;
 }

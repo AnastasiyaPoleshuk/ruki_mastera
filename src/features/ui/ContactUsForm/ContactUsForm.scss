@@ -10,13 +10,13 @@
   @include h2;
   font-size: 62px;
   font-weight: bolder;
-  color: $white-color;
+  color: $brand-color;
 }
 
 .contact-us__form {
   margin-top: 60px;
   width: 500px;
-  background-color: $white-color;
+  background-color: $brand-color;
   border-radius: 20px;
   padding: 25px;
   @include flex;
@@ -37,15 +37,15 @@
 
   .form__button {
     @include btn;
-    border: 4px solid $brand-color-hover;
-    color: $brand-color-hover;
+    border: 4px solid $white-color;
+    color: $white-color;
     background: transparent;
     padding: 20px 30px;
 
     &:hover {
-      background: $brand-color !important;
-      border: 4px solid $brand-color !important;
-      color: $white-color;
+      background: $white-color !important;
+      border: 4px solid $white-color !important;
+      color: $brand-color;
     }
   }
 }

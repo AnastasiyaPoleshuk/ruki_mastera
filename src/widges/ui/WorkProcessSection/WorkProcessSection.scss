@@ -1,25 +1,24 @@
-@import "../../../app//App.variables.scss";
+@import "../../../app/App.variables.scss";
 
-.about__section {
+.work-process__section {
   background: $brand-color;
   width: 100%;
   @include flex;
   flex-direction: column;
-  padding-top: $section-margin;
+  padding-top: 50px;
 }
 
-.about__container {
+.work-process__container {
   @include flex;
   flex-direction: column;
-
-  .about__title {
+  .work-process__title {
     @include h2;
     font-size: 62px;
     font-weight: bolder;
     color: $white-color;
   }
 
-  .about-items__block {
+  .work-process__block {
     @include flex;
     align-items: flex-start;
     gap: 50px;

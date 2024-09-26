@@ -23,7 +23,7 @@ export const ContactUsForm = () => {
 
     if (service) {
       const result = await axios.post(
-        `${CONSTANTS.TG_REQUEST_URL}&text=Name: ${values.username}%0APhone: ${values.phone}%0AService: ${values.service}`,
+        `${CONSTANTS.TG_REQUEST_URL}&text=Name: ${values.username}%0APhone: ${values.phone}%0AService: ${service}`,
       );
 
       if (result.status === StatusCodes.OK) {
@@ -56,7 +56,11 @@ export const ContactUsForm = () => {
         name="basic"
         initialValues={{ remember: true }}
         onFinish={onFinish}
-        // onFinishFailed={onFinishFailed}
+        onFinishFailed={() =>
+          error(
+            "Что-то пошло не так! перепроверьте свой запрос или попробуйте позже",
+          )
+        }
         autoComplete="off"
         className="contact-us__form"
       >

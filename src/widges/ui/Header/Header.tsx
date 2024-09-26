@@ -12,7 +12,7 @@ export const Header = () => {
           <LogoImg styleName={"color-style"} />
           <h2 className="header__title">RukiMastera</h2>
         </div>
-        <p className="header__tel">+375445237432</p>
+        <p className="header__tel">+375(44)523-74-32</p>
 
         <div className="header__contacts-blok">
           {headerContactsData.map((item) => (

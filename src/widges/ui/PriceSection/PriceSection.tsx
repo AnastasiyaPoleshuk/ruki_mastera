@@ -5,8 +5,8 @@ import "./PriceSection.scss";
 export const PriceSection = () => {
   return (
     <section className="price__container">
-      <CollapsePrice />
       <PriceImg />
+      <CollapsePrice />
     </section>
   );
 };

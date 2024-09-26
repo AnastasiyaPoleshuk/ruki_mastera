@@ -1,17 +1,19 @@
 @import "../../../app//App.variables.scss";
 
 .collapse-price__block {
-  margin-right: 100px;
+  margin-left: 100px;
   .collapse-price__title {
     @include h2;
     font-size: 62px;
     font-weight: bolder;
     color: $brand-color;
+    text-align: center;
   }
 
   .collapse-price__sub-title {
     @include h4;
     font-style: italic;
+    text-align: center;
     margin-bottom: 70px;
   }
 }
