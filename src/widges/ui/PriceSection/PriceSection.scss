@@ -1,0 +1,7 @@
+@import "../../../app//App.variables.scss";
+
+.price__container {
+  @include flex;
+  justify-content: space-between;
+  margin-top: $section-margin;
+}

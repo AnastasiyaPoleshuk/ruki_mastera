@@ -1,0 +1,10 @@
+@import "../../../app//App.variables.scss";
+
+.item__text {
+  @include body-medium;
+  margin-bottom: 10px;
+}
+
+.item__price {
+  @include h5;
+}
