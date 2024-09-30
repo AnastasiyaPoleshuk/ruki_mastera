@@ -1,0 +1,21 @@
+@import "../../../app/App.variables.scss";
+
+.works__carousel {
+  width: 900px;
+
+  @media (max-width: 1000px) {
+    width: 780px;
+  }
+
+  @media (max-width: 800px) {
+    width: 580px;
+  }
+
+  @media (max-width: 600px) {
+    width: 380px;
+  }
+
+  @media (max-width: 400px) {
+    width: 300px;
+  }
+}

@@ -8,3 +8,5 @@ export { PriceImg } from "./ui/PriceImg/PriceImg";
 export { CollapsePriceItem } from "./ui/CollapsePriceItem/CollapsePriceItem";
 export { AboutItem } from "./ui/AboutItem/AboutItem";
 export { WorkProcessItem } from "./ui/WorkProcessItem/WorkProcessItem";
+export { WorksImg } from "./ui/WorksImg/WorksImg";
+export { WorksSectionImg } from "./ui/WorksSectionImg/WorksSectionImg";

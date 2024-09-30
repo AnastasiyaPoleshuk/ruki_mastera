@@ -1,9 +1,15 @@
 @import "../../../app/App.variables.scss";
 
+.contact-us__section {
+  margin-top: $section-margin;
+  background-color: $brand-color;
+  width: 100%;
+  @include flex;
+}
+
 .contact-us__container {
   @include flex;
   justify-content: space-between;
-  margin-top: $section-margin;
 
   @media (max-width: 800px) {
     margin-top: 40px;

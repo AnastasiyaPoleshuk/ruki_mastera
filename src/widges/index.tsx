@@ -5,3 +5,4 @@ export { PriceSection } from "./ui/PriceSection/PriceSection";
 export { ContactUsSection } from "./ui/ContactUsSection/ContactUsSection";
 export { AboutSection } from "./ui/AboutSection/AboutSection";
 export { WorkProcessSection } from "./ui/WorkProcessSection/WorkProcessSection";
+export { WorksSection } from "./ui/WorksSection/WorksSection";

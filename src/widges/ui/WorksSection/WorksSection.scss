@@ -1,0 +1,45 @@
+@import "../../../app//App.variables.scss";
+
+.works__container {
+  @include flex;
+  flex-direction: column;
+
+  margin-top: $section-margin;
+
+  @media (max-width: 800px) {
+    margin-top: 40px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .works__block {
+    width: 100%;
+    @include flex;
+    flex-direction: column;
+  }
+
+  .works__title {
+    @include h2;
+    font-size: 62px;
+    font-weight: bolder;
+    color: $brand-color;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+
+    @media (max-width: 800px) {
+      font-size: 52px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 42px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 32px;
+    }
+  }
+}

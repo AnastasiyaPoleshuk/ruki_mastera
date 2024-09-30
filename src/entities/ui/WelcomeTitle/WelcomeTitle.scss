@@ -45,7 +45,13 @@
 
     @media (max-width: 600px) {
       @include body-medium;
-      margin-bottom: 30px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 400px) {
+      @include body-medium;
+      margin-top: 20px;
       text-align: center;
     }
   }

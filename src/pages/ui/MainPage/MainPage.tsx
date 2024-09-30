@@ -4,6 +4,7 @@ import {
   PriceSection,
   WelcomeSection,
   WorkProcessSection,
+  WorksSection,
 } from "src/widges";
 import "./MainPage.scss";
 
@@ -14,6 +15,7 @@ export const MainPage = () => {
       <AboutSection />
       <PriceSection />
       <WorkProcessSection />
+      <WorksSection />
       <ContactUsSection />
     </main>
   );

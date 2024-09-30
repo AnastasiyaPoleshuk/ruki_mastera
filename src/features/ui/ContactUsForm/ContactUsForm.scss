@@ -10,7 +10,7 @@
   @include h2;
   font-size: 62px;
   font-weight: bolder;
-  color: $brand-color;
+  color: $white-color;
 
   @media (max-width: 800px) {
     font-size: 52px;
@@ -28,14 +28,12 @@
 .contact-us__form {
   margin-top: 60px;
   width: 500px;
-  background-color: $brand-color;
   border-radius: 20px;
   padding: 25px;
   @include flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 
   @media (max-width: 1000px) {
     width: 400px;
@@ -54,11 +52,24 @@
 
   .form__input {
     width: 100%;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 20px;
+    border-radius: 30px;
 
     @media (max-width: 1000px) {
       padding: 10px 5px;
+    }
+
+    &::placeholder {
+      color: $text-color;
+      font-size: 20px;
+
+      @media (max-width: 800px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 14px;
+      }
     }
   }
 
@@ -75,7 +86,6 @@
 
     &:hover {
       background: $white-color !important;
-      border: 4px solid $white-color !important;
       color: $brand-color;
     }
 
@@ -88,4 +98,9 @@
       border: 2px solid $white-color;
     }
   }
+}
+
+.ant-form-item-explain-error {
+  color: #a10002;
+  text-align: center;
 }
