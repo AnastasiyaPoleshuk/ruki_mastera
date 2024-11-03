@@ -1,8 +1,24 @@
 import "./AppButton.scss";
 
-export const AppButton = ({ text }: { text: string }) => {
+export const AppButton = ({
+  text,
+  isScreenSm,
+  openModal,
+}: {
+  text: string;
+  isScreenSm: boolean;
+  openModal: () => void;
+}) => {
+  const config = !isScreenSm
+    ? {
+        href: "#contactUs",
+      }
+    : {
+        onClick: openModal,
+      };
+
   return (
-    <a href="#contactUs" className="app-btn">
+    <a {...config} className="app-btn">
       {text}
     </a>
   );
